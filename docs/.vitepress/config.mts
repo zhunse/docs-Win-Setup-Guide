@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/docs-Win-Setup-Guide/",
   title: "Win Setup Guide",
   description: "教你如何正确的入手一台新电脑",
   lang: 'zh-Hans',
