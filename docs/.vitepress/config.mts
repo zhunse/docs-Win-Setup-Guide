@@ -4,12 +4,12 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/docs-Win-Setup-Guide/",
+  // base: "/docs-Win-Setup-Guide/",
   title: "Win Setup Guide",
   description: "教你如何正确的入手一台新电脑",
   lang: 'zh-Hans',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#6b68ff' }],
   ],
   themeConfig: {
@@ -66,26 +66,27 @@ export default defineConfig({
         text: "实用教程",
         items: [
           { text: '开箱验机', link: '/initall/tutorial/Unboxing' },
+          { text: '软件推荐', link: '/initall/tutorial/Software' },
           {
             text: "演示页面",
             collapsed: false,
             items: [
               { text: "演示页面A", link: "/initall/demo/a" },
               { text: "演示页面B", link: "/initall/demo/b" },
-              { text: "演示页面C", link: "/initall/demo/c" },
-              { text: "演示页面D", link: "/initall/demo/d" },
-              { text: "演示页面E", link: "/initall/demo/e" },
-              { text: "演示页面F", link: "/initall/demo/f" },
-              { text: "演示页面G", link: "/initall/demo/g" },
-
             ],
           },
         ]
       }
     ],
     footer: {
-      message: '<div class="anei"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer"><img src="/img/icp.png">陕ICP备2023007133号-2</a></div><div class="anei"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=51011502000812" rel="noreferrer" target="_blank"><img src="/img/anei.png">川公网安备51011502000812</a></div>',
-      copyright: `COPYRIGHT © ${new Date().getFullYear()} Win Setup Guide`
+      message: `<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noreferrer">
+        <img src="/img/icp.png" alt="ICP备案号">陕ICP备2023007133号-2
+    </a>
+    <br>
+    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51011502000871" target="_blank" rel="noreferrer">
+        <img src="/img/anei.png" alt="川公网安备">川公网安备51011502000871号
+    </a>`,
+      copyright: `COPYRIGHT © 2024-${new Date().getFullYear()} & <a href="https://zhuns.top/">进函科技社</a>`
     },
 
     socialLinks: [
